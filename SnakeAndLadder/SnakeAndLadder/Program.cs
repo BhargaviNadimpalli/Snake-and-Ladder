@@ -16,7 +16,7 @@ namespace SnakeAndLadder
                 Random rand = new Random();
                 int diceNum = rand.Next(1, 7);
                 Console.WriteLine("The random dice number is :" + diceNum);
-                diceRollCount++ ;
+                diceRollCount++;
                 position = rand.Next(0, 3);
                 Console.WriteLine("The position of the player" + position);
                 if (position == 1)
@@ -41,7 +41,7 @@ namespace SnakeAndLadder
                     position1 = position1 + 0;
                     Console.WriteLine("position of die :" + position1);
                 }
-            Console.WriteLine("The number of time dice rolled is :" + diceRollCount);
+            Console.WriteLine("The number of times dice rolled is :" + diceRollCount);
             }
 
         }
