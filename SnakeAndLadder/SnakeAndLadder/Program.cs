@@ -6,7 +6,9 @@ namespace SnakeAndLadder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Snake and ladder problems in master branch");
+            Console.WriteLine("Snake and ladder game");
+           int player = 1;
+            int position = 0;
         }
     }
 }
