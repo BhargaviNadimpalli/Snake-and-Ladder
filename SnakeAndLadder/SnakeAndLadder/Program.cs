@@ -19,7 +19,10 @@ namespace SnakeAndLadder
                 Console.WriteLine("The position of the player" + position);
                 if (position == 1)
                 {
-                    position1 = position1 + diceNum;
+                    if (position1 <= 100)
+                    {
+                        position1 = position1 + diceNum;
+                    }
                 }
                 else if (position == 2)
                 {
