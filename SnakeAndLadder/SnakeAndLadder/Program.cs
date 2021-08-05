@@ -23,10 +23,12 @@ namespace SnakeAndLadder
                     {
                         position1 = position1 + diceNum;
                     }
+                    Console.WriteLine("position of die :" + position1);
                 }
                 else if (position == 2)
                 {
                     position1 = position1 - diceNum;
+                    Console.WriteLine("position of die :" + position1);
                     if (position1 < 0)
                     {
                         position1 = 0;
@@ -35,6 +37,7 @@ namespace SnakeAndLadder
                 else
                 {
                     position1 = position1 + 0;
+                    Console.WriteLine("position of die :" + position1);
                 }
             Console.WriteLine("The player wins with the position" + position1);
             }
