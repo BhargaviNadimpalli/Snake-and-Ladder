@@ -9,10 +9,16 @@ namespace SnakeAndLadder
             Console.WriteLine("Snake and ladder game");
          
             int position;
+<<<<<<< HEAD
             int player = 0;
             int[] playerPosition = new int[2] { 0, 0 };
             int diceRollCount = 0;
             while (playerPosition[player] < 100)
+=======
+            int position1 = 0;
+            int diceRollCount = 0;
+            while (position1 < 100)
+>>>>>>> 1ec3711077e3705096d0e6ab7c1ea2e813b07fbd
             {
                 Random rand = new Random();
                 int diceNum = rand.Next(1, 7);
@@ -22,7 +28,11 @@ namespace SnakeAndLadder
                 Console.WriteLine("The position of the player" + position);
                 if (position == 1)
                 {
+<<<<<<< HEAD
                     if (playerPosition[player] + diceNum <= 100)
+=======
+                    if ((position1 + diceNum) <= 100)
+>>>>>>> 1ec3711077e3705096d0e6ab7c1ea2e813b07fbd
                     {
                         playerPosition[player] = playerPosition[player] + diceNum;
                     }
@@ -42,6 +52,7 @@ namespace SnakeAndLadder
                 {
                     Console.WriteLine(" player " + player + "position: " + playerPosition[player]);
                 }
+<<<<<<< HEAD
                  if (position == 0 || position == 2)
                 {
                     if (player == 0)
@@ -58,6 +69,9 @@ namespace SnakeAndLadder
                     Console.WriteLine("The number of times dice roll is :" + diceRollCount);
                /// Console.WriteLine("The winning player is :" + winningPlayer);
               
+=======
+            Console.WriteLine("The number of times dice rolled is :" + diceRollCount);
+>>>>>>> 1ec3711077e3705096d0e6ab7c1ea2e813b07fbd
             }
 
         }
